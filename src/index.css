@@ -4,22 +4,33 @@ html{
 
 body {
   margin: 0;
-  padding: 0;
   font-family: sans-serif;
-  background: url(/img/vario-bg.png) no-repeat;
+  background: url(/img/spacex.jpg);
   background-size: 100%;
+  height: auto; 
   background-position: bottom;
-  background-color: #95e8f3;
-  min-height: 100%;
+  background-size: 100%;
 }
+
 
 form{
   padding: 20px;
   margin-top: 60px;
 }
 
-form button, form h5{
-  margin: 20px 0;
+ .card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 80px;
+  max-height: fit-content;
+}
+
+.row{
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly]),

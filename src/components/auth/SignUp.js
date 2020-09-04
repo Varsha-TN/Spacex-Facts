@@ -21,7 +21,7 @@ class SignUp extends Component {
   }
   render() {
     const { auth, authError } = this.props;
-    if (auth.uid) return <Redirect to='/' /> 
+    if (auth.uid) return <Redirect to='/' />
     return (
       <div className="container">
         <form className="white" onSubmit={this.handleSubmit}>
@@ -45,7 +45,7 @@ class SignUp extends Component {
           <div className="input-field">
             <button className="btn pink lighten-1 z-depth-0">Sign Up</button>
             <div className="center red-text">
-              { authError ? <p>{authError}</p> : null }
+              {authError ? <p>{authError}</p> : null}
             </div>
           </div>
         </form>
@@ -61,7 +61,7 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch)=> {
+const mapDispatchToProps = (dispatch) => {
   return {
     signUp: (creds) => dispatch(signUp(creds))
   }
